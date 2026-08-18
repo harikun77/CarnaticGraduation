@@ -2,6 +2,7 @@
   "site": {
     "title": "Kum. Sahana Kumar — Vocal Graduation Concert | Paramacharya School of Music",
     "brand": "Paramacharya School of Music",
+    "logo": "assets/logo.png",
     "rsvpUrl": "https://evite.me/carnatic-graduation-sahana",
     "liveStreamUrl": "https://youtube.com/live",
     "venue": "Saratoga Civic Theater",
@@ -22,7 +23,7 @@
       "subtitle": "Vocal Graduation Concert under the able guidance of Guru Smt. Geetha Ravi, with blessings of the Almighty, Gurus, and Elders.",
       "backgroundImage": "assets/hero-banner.jpg"
     },
-    "about": "With the blessings of Almighty, Gurus and elders, Sahana Kumar will be performing her formal Vocal Graduation Concert on August 30th, 2026, presented by Paramacharya School of Music under the able guidance of Guru Smt. Geetha Ravi. In the Carnatic classical tradition, this milestone concert celebrates over a decade of rigorous sadhana in Sruti, Laya, Sahitya Bhava, and Manodharma Sangeetham.",
+    "about": "With the blessings of Almighty, Gurus and elders, Sahana Kumar will be performing her formal Vocal Graduation Concert on August 30th, 2026, presented by Paramacharya School of Music under the able guidance of Guru Smt. Geetha Ravi. In the Carnatic classical tradition, this milestone concert represents the culmination of 11 years of rigorous sadhana in Sruti, Laya, Sahitya Bhava, and Manodharma Sangeetham.",
     "stats": [
       {
         "label": "Years of Sadhana",

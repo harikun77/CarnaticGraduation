@@ -14,7 +14,8 @@
   <nav class="nav" role="navigation" aria-label="Main Navigation">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <div class="brand-icon">🎵</div>
+        <img class="brand-logo" id="site-logo" src="assets/logo.png" alt="Paramacharya School of Music Logo" onerror="this.onerror=null; this.src='assets/logo.svg'; this.onerror=function(){this.style.display='none'; document.getElementById('brand-fallback').style.display='flex';};"/>
+        <div class="brand-icon" id="brand-fallback" style="display:none;">🎵</div>
         <div>
           <span class="brand-title bind-brand-title">Paramacharya School of Music</span>
           <span class="brand-sub">Vocal Graduation Concert</span>

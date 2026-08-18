@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fbbf24"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e130c"/>
+      <stop offset="100%" stop-color="#0b0806"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+  
+  <!-- Outer Rounded Badge -->
+  <rect x="4" y="4" width="112" height="112" rx="24" fill="url(#bgGrad)" stroke="url(#goldGrad)" stroke-width="3"/>
+  <rect x="8" y="8" width="104" height="104" rx="20" fill="none" stroke="url(#goldGrad)" stroke-width="1" stroke-dasharray="3,3" opacity="0.6"/>
+  
+  <!-- Ganesha / Om / Classical Motif -->
+  <g fill="none" stroke="url(#goldGrad)" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round" filter="url(#glow)">
+    <!-- Crown / Trishul element -->
+    <path d="M60 20 L60 30 M52 24 Q60 28 68 24"/>
+    <!-- Ganesha Head & Trunk curve -->
+    <path d="M46 38 C46 30 74 30 74 40 C74 54 50 50 50 68 C50 78 58 84 66 84 C74 84 78 78 78 72 C78 66 70 66 70 72"/>
+    <!-- Ears -->
+    <path d="M46 36 C34 38 32 52 44 58"/>
+    <path d="M74 36 C86 38 88 52 76 58"/>
+    <!-- Modak / Tusk / Tilak -->
+    <circle cx="60" cy="38" r="2.5" fill="url(#goldGrad)"/>
+    <path d="M48 60 L42 64" stroke-width="2.5"/>
+    <!-- Sacred Om curve hint at bottom -->
+    <path d="M40 92 Q60 100 80 92" stroke-width="2" opacity="0.8"/>
+  </g>
+  
+  <!-- Musical Swara Dots -->
+  <circle cx="28" cy="28" r="2" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="92" cy="28" r="2" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="28" cy="92" r="2" fill="#fbbf24" opacity="0.6"/>
+  <circle cx="92" cy="92" r="2" fill="#fbbf24" opacity="0.6"/>
+</svg>

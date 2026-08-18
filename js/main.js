@@ -1,31 +1,31 @@
 /**
- * Carnatic Graduation Concert — Interactive Frontend Controller
- * Dynamically binds content.json to DOM with full fallback support
+ * Paramacharya School of Music — Carnatic Vocal Graduation Concert
+ * Interactive Frontend Controller & Data Binder (with Instant Cache-Buster)
  */
 
-// Embedded fallback data for seamless local file:// browsing
 const FALLBACK_DATA = {
   site: {
-    title: "Sahana Kumar — Carnatic Vocal Graduation Concert",
-    brand: "Carnatic Margam",
+    title: "Kum. Sahana Kumar — Vocal Graduation Concert | Paramacharya School of Music",
+    brand: "Paramacharya School of Music",
+    logo: "assets/logo.png",
     rsvpUrl: "https://evite.me/carnatic-graduation-sahana",
     liveStreamUrl: "https://youtube.com/live",
-    venue: "Visual & Performing Arts Center",
-    address: "21250 Stevens Creek Blvd, Cupertino, CA 95014",
-    date: "Saturday, August 29, 2026",
-    time: "4:30 PM PDT",
-    directionsUrl: "https://maps.google.com/?q=Visual+and+Performing+Arts+Center+Cupertino+CA"
+    venue: "Saratoga Civic Theater",
+    address: "13777 Fruitvale Avenue, Saratoga, CA 95070",
+    date: "Sunday, August 30, 2026",
+    time: "4:00 PM – 6:00 PM PDT",
+    directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Saratoga%20Civic%20Theater%2C%2013777%20Fruitvale%20Ave%2C%20Saratoga%2C%20CA%2095070"
   }
 };
 
 async function fetchContentData() {
-  // Check localStorage override (useful for live admin / local testing)
   try {
     const override = localStorage.getItem('carnaticContentOverride');
     if (override) return JSON.parse(override);
   } catch (e) {}
 
   try {
+    // Bust JSON cache on every load
     const res = await fetch('content.json?ts=' + Date.now(), { cache: 'no-store' });
     if (!res.ok) throw new Error('HTTP status ' + res.status);
     const data = await res.json();
@@ -44,21 +44,30 @@ async function initPage() {
   if (data?.site?.title) document.title = data.site.title;
 
   const brandTitles = document.querySelectorAll('.bind-brand-title');
-  brandTitles.forEach(el => { el.textContent = data.site.brand || 'Carnatic Margam'; });
+  brandTitles.forEach(el => { el.textContent = data.site.brand || 'Paramacharya School of Music'; });
+
+  // Instant Cache-Busted Logo Binding
+  const logoImgs = document.querySelectorAll('.brand-logo');
+  if (data?.site?.logo) {
+    const freshLogoUrl = data.site.logo + (data.site.logo.includes('?') ? '&' : '?') + 't=' + Date.now();
+    logoImgs.forEach(img => {
+      img.src = freshLogoUrl;
+    });
+  }
 
   const rsvpBtns = document.querySelectorAll('.bind-rsvp');
   rsvpBtns.forEach(el => { 
-    if (data.site.rsvpUrl) el.href = data.site.rsvpUrl; 
+    if (data.site?.rsvpUrl) el.href = data.site.rsvpUrl; 
   });
 
   const liveStreamBtns = document.querySelectorAll('.bind-livestream');
   liveStreamBtns.forEach(el => {
-    if (data.site.liveStreamUrl) el.href = data.site.liveStreamUrl;
+    if (data.site?.liveStreamUrl) el.href = data.site.liveStreamUrl;
   });
 
   const directionsBtns = document.querySelectorAll('.bind-directions');
   directionsBtns.forEach(el => {
-    if (data.site.directionsUrl) el.href = data.site.directionsUrl;
+    if (data.site?.directionsUrl) el.href = data.site.directionsUrl;
   });
 
   // Page Specific Inits
@@ -67,9 +76,6 @@ async function initPage() {
   if (page === 'artists') renderArtistsPage(data);
 }
 
-/* ==========================================================================
-   Home Page Binding
-   ========================================================================== */
 function renderHomePage(data) {
   if (!data?.home) return;
 
@@ -81,30 +87,15 @@ function renderHomePage(data) {
   const venueEl = document.getElementById('chip-venue');
   const aboutEl = document.getElementById('home-about-text');
 
-  if (titleEl) titleEl.textContent = data.home.hero?.title || 'Sahana Kumar';
-  if (eyebrowEl) eyebrowEl.textContent = data.home.hero?.eyebrow || 'Carnatic Vocal Graduation Concert';
+  if (titleEl) titleEl.textContent = data.home.hero?.title || 'Kum. Sahana Kumar';
+  if (eyebrowEl) eyebrowEl.textContent = data.home.hero?.eyebrow || 'Paramacharya School of Music';
   if (subEl) subEl.textContent = data.home.hero?.subtitle || '';
-  if (dateEl) dateEl.textContent = `Date: ${data.site.date}`;
-  if (timeEl) timeEl.textContent = `Time: ${data.site.time}`;
-  if (venueEl) venueEl.textContent = `Venue: ${data.site.venue}`;
+  if (dateEl) dateEl.innerHTML = `<span style="color:var(--accent);">📅</span> Date: ${data.site.date}`;
+  if (timeEl) timeEl.innerHTML = `<span style="color:var(--accent);">⏰</span> Time: ${data.site.time}`;
+  if (venueEl) venueEl.innerHTML = `<span style="color:var(--accent);">📍</span> Venue: ${data.site.venue}`;
   if (aboutEl) aboutEl.textContent = data.home.about || '';
-
-  // Stats
-  const statsContainer = document.getElementById('home-stats');
-  if (statsContainer && data.home.stats) {
-    statsContainer.innerHTML = '';
-    data.home.stats.forEach(stat => {
-      const card = document.createElement('div');
-      card.className = 'stat';
-      card.innerHTML = `<span>${stat.label}</span><strong>${stat.value}</strong>`;
-      statsContainer.appendChild(card);
-    });
-  }
 }
 
-/* ==========================================================================
-   Program Guide Binding (Core Page)
-   ========================================================================== */
 function renderProgramPage(data) {
   if (!data?.program) return;
 
@@ -113,153 +104,47 @@ function renderProgramPage(data) {
     subtitleEl.textContent = data.program.subtitle;
   }
 
-  const container = document.getElementById('program-bento-container');
-  if (!container || !data.program.items) return;
-
-  const items = data.program.items;
-
-  function renderList(filterCategory = 'all') {
-    container.innerHTML = '';
-    const filtered = filterCategory === 'all' 
-      ? items 
-      : items.filter(item => item.category.toLowerCase().includes(filterCategory.toLowerCase()));
-
-    filtered.forEach(item => {
-      const article = document.createElement('article');
-      article.className = 'program-item';
-      article.innerHTML = `
-        <div class="program-image-wrapper">
-          <span class="program-badge">${item.category}</span>
-          <div class="program-visual-icon">${item.visualIcon || '🎵'}</div>
-          <div class="program-image-title">${item.title}</div>
-          <div class="program-image-subtitle">${item.composer}</div>
-        </div>
-        <div class="program-details">
-          <div class="program-details-header">
-            <h3>${item.number}. ${item.title}</h3>
-          </div>
-          <p>${item.overview}</p>
-          <p>${item.details.replace(/\n/g, '<br/>')}</p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> ${item.ragam}</div>
-            <div class="meta-item"><strong>Talam:</strong> ${item.talam}</div>
-            <div class="meta-item"><strong>Composer:</strong> ${item.composer}</div>
-            <div class="meta-item"><strong>Deity / Theme:</strong> ${item.deity}</div>
-          </div>
-        </div>
-      `;
-      container.appendChild(article);
-    });
-  }
-
-  renderList('all');
-
-  // Filter Buttons
   const filterBtns = document.querySelectorAll('.filter-btn');
+  const items = document.querySelectorAll('.program-item');
+
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       filterBtns.forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
-      const cat = btn.getAttribute('data-filter');
-      renderList(cat);
+      const filter = btn.getAttribute('data-filter');
+
+      items.forEach(item => {
+        const badge = item.querySelector('.program-item-badge')?.textContent || '';
+        const title = item.querySelector('.program-art-title')?.textContent || '';
+        
+        if (filter === 'all') {
+          item.style.display = 'grid';
+        } else if (filter === 'Varnam' && badge.includes('Varnam')) {
+          item.style.display = 'grid';
+        } else if (filter === 'Invocatory' && badge.includes('Invocatory')) {
+          item.style.display = 'grid';
+        } else if (filter === 'Sub-Main' && (badge.includes('Sub-Main') || title.includes('Jnanamosagarada'))) {
+          item.style.display = 'grid';
+        } else if (filter === 'Keerthanam' && (badge.includes('Keerthanam') || badge.includes('Sub-Main'))) {
+          item.style.display = 'grid';
+        } else if (filter === 'Centerpiece' && (badge.includes('Main') || title.includes('Sarojadala'))) {
+          item.style.display = 'grid';
+        } else if (filter === 'Devotional' && (badge.includes('Devotional') || badge.includes('Thiruppavai') || badge.includes('Kavadi'))) {
+          item.style.display = 'grid';
+        } else if (filter === 'Thillana' && (badge.includes('Thillana') || badge.includes('Benediction'))) {
+          item.style.display = 'grid';
+        } else {
+          item.style.display = 'none';
+        }
+      });
     });
   });
 }
 
-/* ==========================================================================
-   Artists & Bios Binding
-   ========================================================================== */
 function renderArtistsPage(data) {
   if (!data?.artists) return;
-
-  // Vocalist (Sahana)
-  const vocalist = data.artists.vocalist;
-  if (vocalist) {
-    const nameEl = document.getElementById('vocalist-name');
-    const taglineEl = document.getElementById('vocalist-tagline');
-    const bioContainer = document.getElementById('vocalist-bio');
-    const highlightsContainer = document.getElementById('vocalist-highlights');
-    const imgEl = document.getElementById('vocalist-img');
-
-    if (nameEl) nameEl.textContent = vocalist.name;
-    if (taglineEl) taglineEl.textContent = vocalist.tagline;
-    if (imgEl && vocalist.image) imgEl.src = vocalist.image;
-
-    if (bioContainer && vocalist.bio) {
-      bioContainer.innerHTML = '';
-      vocalist.bio.forEach(pText => {
-        const p = document.createElement('p');
-        p.textContent = pText;
-        bioContainer.appendChild(p);
-      });
-    }
-
-    if (highlightsContainer && vocalist.highlights) {
-      highlightsContainer.innerHTML = '';
-      vocalist.highlights.forEach(h => {
-        const li = document.createElement('li');
-        li.textContent = h;
-        highlightsContainer.appendChild(li);
-      });
-    }
-  }
-
-  // Guru (Smt. Geetha Ravi)
-  const guru = data.artists.guru;
-  if (guru) {
-    const nameEl = document.getElementById('guru-name');
-    const taglineEl = document.getElementById('guru-tagline');
-    const bioContainer = document.getElementById('guru-bio');
-    const highlightsContainer = document.getElementById('guru-highlights');
-
-    if (nameEl) nameEl.textContent = guru.name;
-    if (taglineEl) taglineEl.textContent = guru.tagline;
-
-    if (bioContainer && guru.bio) {
-      bioContainer.innerHTML = '';
-      guru.bio.forEach(pText => {
-        const p = document.createElement('p');
-        p.textContent = pText;
-        bioContainer.appendChild(p);
-      });
-    }
-
-    if (highlightsContainer && guru.highlights) {
-      highlightsContainer.innerHTML = '';
-      guru.highlights.forEach(h => {
-        const li = document.createElement('li');
-        li.textContent = h;
-        highlightsContainer.appendChild(li);
-      });
-    }
-  }
-
-  // Accompanists Grid
-  const accompanists = data.artists.accompanists;
-  const accContainer = document.getElementById('accompanists-container');
-  if (accContainer && accompanists) {
-    accContainer.innerHTML = '';
-    accompanists.forEach(acc => {
-      const card = document.createElement('div');
-      card.className = 'accompanist-card';
-      card.innerHTML = `
-        <div class="accompanist-header">
-          <div class="accompanist-icon">${acc.icon || '🎵'}</div>
-          <div class="accompanist-info">
-            <h3>${acc.name}</h3>
-            <span class="accompanist-instrument">${acc.instrument}</span>
-          </div>
-        </div>
-        <p>${acc.bio}</p>
-      `;
-      accContainer.appendChild(card);
-    });
-  }
 }
 
-/* ==========================================================================
-   Navigation Toggle & Lifecycle
-   ========================================================================== */
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.menu-toggle');
   const menu = document.querySelector('.menu');
