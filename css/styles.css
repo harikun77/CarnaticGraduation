@@ -346,18 +346,8 @@ a:hover {
 }
 
 /* ==========================================================================
-   Video Section (Exact SanMargam Style)
+   Video Player Section (Dedicated Live Stream Page)
    ========================================================================== */
-.video-section {
-  margin: 32px 0;
-}
-
-.video-section h2, .video-section h3 {
-  margin-bottom: 16px;
-  color: var(--accent);
-  font-size: 1.4rem;
-}
-
 .video-container {
   position: relative;
   width: 100%;
@@ -370,90 +360,152 @@ a:hover {
 
 .video-container iframe {
   width: 100%;
-  height: 480px;
+  height: 520px;
   border: none;
   display: block;
 }
 
-.video-caption {
-  text-align: center;
-  margin-top: 12px;
-  color: var(--muted);
-  font-size: 0.9em;
+@media (max-width: 768px) {
+  .video-container iframe {
+    height: 260px;
+  }
 }
 
 /* ==========================================================================
-   Concert Margam Sequence Roadmap (Visual Highlight)
+   Vertical Bento Concert Flow (Repertoire Timeline)
    ========================================================================== */
-.roadmap-container {
+.vertical-flow-bento {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0 40px 0;
+}
+
+.flow-step-card {
   background: var(--card);
   border: 1px solid var(--line);
   border-radius: var(--radius);
-  padding: 20px 24px;
-  margin: 24px 0 36px 0;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-}
-
-.roadmap-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 16px;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.roadmap-header h3 {
-  margin: 0;
-  color: var(--accent);
-  font-size: 1.15rem;
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
-
-.roadmap-steps {
+  padding: 18px 24px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(105px, 1fr));
-  gap: 8px;
+  grid-template-columns: 70px 1.4fr 1.8fr auto;
+  align-items: center;
+  gap: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transition: var(--transition);
+  position: relative;
 }
 
-.roadmap-step {
-  background: #0a1118;
-  border: 1px solid var(--line);
-  border-radius: 10px;
-  padding: 10px 8px;
-  text-align: center;
+.flow-step-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--line);
   transition: var(--transition);
 }
 
-.roadmap-step:hover {
-  border-color: var(--accent);
-  background: rgba(245, 158, 11, 0.08);
+.flow-step-card:hover {
+  border-color: var(--line-light);
+  transform: translateX(4px);
+  background: var(--card-hover);
 }
 
-.roadmap-step.highlight {
-  border-color: var(--accent2);
-  background: rgba(56, 189, 248, 0.1);
+.flow-step-card:hover::before {
+  background: var(--accent);
 }
 
-.roadmap-step-num {
-  font-size: 0.75rem;
-  color: var(--muted);
-  font-weight: 700;
+.flow-step-card.highlight {
+  border-color: rgba(245, 158, 11, 0.4);
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.08) 0%, var(--card) 60%);
 }
 
-.roadmap-step-title {
-  font-size: 0.82rem;
-  font-weight: 600;
+.flow-step-card.highlight::before {
+  background: var(--accent);
+}
+
+.flow-step-card.submain-highlight {
+  border-color: rgba(56, 189, 248, 0.4);
+  background: linear-gradient(90deg, rgba(56, 189, 248, 0.08) 0%, var(--card) 60%);
+}
+
+.flow-step-card.submain-highlight::before {
+  background: var(--accent2);
+}
+
+.flow-num-badge {
+  width: 48px;
+  height: 48px;
+  border-radius: 12px;
+  background: #0a1118;
+  border: 1px solid var(--line);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: 1.15rem;
   color: var(--text-bright);
-  margin-top: 2px;
 }
 
-.roadmap-step-raga {
-  font-size: 0.72rem;
+.flow-num-label {
+  font-size: 0.65rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  line-height: 1;
+}
+
+.flow-piece-info h4 {
+  margin: 0 0 4px 0;
+  font-size: 1.2rem;
+  color: var(--text-bright);
+}
+
+.flow-piece-tag {
+  font-size: 0.8rem;
   color: var(--accent);
-  margin-top: 2px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.flow-raga-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.flow-raga-name {
+  color: var(--text-bright);
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.flow-tala-composer {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.flow-action-badge {
+  background: #0a1118;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+@media (max-width: 900px) {
+  .flow-step-card {
+    grid-template-columns: 60px 1fr;
+    gap: 14px;
+  }
+  .flow-raga-meta, .flow-action-badge {
+    grid-column: 2 / -1;
+  }
 }
 
 /* ==========================================================================
@@ -885,6 +937,5 @@ a:hover {
 @media (max-width: 768px) {
   .stats { grid-template-columns: repeat(2, 1fr); }
   .grid.three { grid-template-columns: 1fr; }
-  .video-container iframe { height: 260px; }
   .hero-content { padding: 40px 20px; }
 }

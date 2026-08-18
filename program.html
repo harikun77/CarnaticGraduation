@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>Program Guide — Kum. Sahana Kumar Vocal Graduation Concert</title>
   <link rel="icon" href="favicon.ico"/>
-  <link rel="stylesheet" href="css/styles.css?v=2"/>
-  <script defer src="js/main.js?v=2"></script>
+  <link rel="stylesheet" href="css/styles.css?v=3"/>
+  <script defer src="js/main.js?v=3"></script>
 </head>
 <body>
 
@@ -14,8 +14,7 @@
   <nav class="nav" role="navigation" aria-label="Main Navigation">
     <div class="container nav-inner">
       <a class="brand" href="index.html">
-        <img class="brand-logo" id="site-logo" src="assets/logo.png?v=2" alt="Paramacharya School of Music Logo" onerror="this.onerror=null; this.src='assets/logo.svg?v=2'; this.onerror=function(){this.style.display='none'; document.getElementById('brand-fallback').style.display='flex';};"/>
-        <div class="brand-icon" id="brand-fallback" style="display:none;">🎵</div>
+        <img class="brand-logo" id="site-logo" src="assets/logo.png" alt="Paramacharya School of Music Logo"/>
         <div>
           <span class="brand-title bind-brand-title">Paramacharya School of Music</span>
           <span class="brand-sub">Vocal Graduation Concert</span>
@@ -26,6 +25,7 @@
         <li><a href="index.html">Home</a></li>
         <li><a href="program.html" class="active">Program Guide</a></li>
         <li><a href="artists.html">Artists & Bios</a></li>
+        <li><a href="livestream.html">Live Stream</a></li>
       </ul>
     </div>
   </nav>
@@ -34,464 +34,601 @@
   <main class="container">
     
     <header class="page-header">
+      <span class="eyebrow">Concert Repertoire</span>
       <h1>Program Guide</h1>
       <p class="muted" id="program-page-subtitle">
         The complete curated concert repertoire featuring traditional compositions across Sanskrit, Telugu, Kannada, and Tamil.
       </p>
     </header>
 
-    <!-- Event Recording / Livestream Video Section (Exact SanMargam Style) -->
-    <section class="video-section">
-      <h2>Event Live Stream & Recording</h2>
-      <div class="video-container">
-        <iframe 
-          src="https://www.youtube.com/embed/FyvCAs2U70o" 
-          title="Sahana Kumar - Carnatic Vocal Graduation Concert"
-          frameborder="0" 
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-          allowfullscreen>
-        </iframe>
+    <!-- ===================================================================
+         Section 1: Vertical Bento Concert Flow & Progression
+         =================================================================== -->
+    <section style="margin: 32px 0;">
+      <div style="display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 16px; flex-wrap: wrap; gap: 10px;">
+        <div>
+          <span class="eyebrow">Margam Architecture</span>
+          <h2 style="margin: 0; color: var(--accent); font-size: 1.5rem;">Concert Flow & Progression</h2>
+        </div>
+        <span class="small muted">11 Curated Masterpieces in Classical Order</span>
       </div>
-      <p class="video-caption">Watch the complete live stream and concert recording of Kum. Sahana Kumar's Vocal Graduation Concert</p>
+
+      <div class="vertical-flow-bento">
+
+        <!-- 1. Varnam -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>01</span>
+            <span class="flow-num-label">Opening</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Viriboni</h4>
+            <span class="flow-piece-tag">Ata Thala Varnam</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Bhairavi</span>
+            <span class="flow-tala-composer">Khanda Jathi Ata Talam (14 Beats) • Pacchimiriam Adiyappa</span>
+          </div>
+          <span class="flow-action-badge">Purvanga & Uttaranga</span>
+        </div>
+
+        <!-- 2. Invocatory -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>02</span>
+            <span class="flow-num-label">Prayer</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Gajavadana Beduve</h4>
+            <span class="flow-piece-tag">Invocatory Devaranama</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Hamsadhwani</span>
+            <span class="flow-tala-composer">Adi Talam (8 Beats) • Saint Purandara Dasa</span>
+          </div>
+          <span class="flow-action-badge">Kalpanaswarams</span>
+        </div>
+
+        <!-- 3. Sub-Main (Highlighted) -->
+        <div class="flow-step-card submain-highlight">
+          <div class="flow-num-badge" style="border-color: var(--accent2); color: var(--accent2);">
+            <span>03</span>
+            <span class="flow-num-label" style="color: var(--accent2);">Sub-Main</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4 style="color: var(--accent2);">Jnanamosagarada</h4>
+            <span class="flow-piece-tag" style="color: var(--accent2);">First Half Centerpiece</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Poorvikalyani</span>
+            <span class="flow-tala-composer">Rupakam (3 Beats) • Saint Tyagaraja</span>
+          </div>
+          <span class="flow-action-badge" style="border-color: var(--accent2); color: var(--accent2);">Alapana & Neraval</span>
+        </div>
+
+        <!-- 4. Keerthanam -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>04</span>
+            <span class="flow-num-label">Kriti</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Ananda Natana Prakasam</h4>
+            <span class="flow-piece-tag">Pancha Bhoota Kshetram</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Kedaram</span>
+            <span class="flow-tala-composer">Misra Chapu (7 Beats) • Muthuswami Dikshitar</span>
+          </div>
+          <span class="flow-action-badge">Akasa Lingam</span>
+        </div>
+
+        <!-- 5. Keerthanam -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>05</span>
+            <span class="flow-num-label">Kriti</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Bhogendra Sayinam</h4>
+            <span class="flow-piece-tag">Sanskrit Keerthanam</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Kuntalavarali</span>
+            <span class="flow-tala-composer">Khanda Chapu (5 Beats) • Maharaja Swathi Thirunal</span>
+          </div>
+          <span class="flow-action-badge">Cascading Swaras</span>
+        </div>
+
+        <!-- 6. Grand Main (Highlighted) -->
+        <div class="flow-step-card highlight">
+          <div class="flow-num-badge" style="border-color: var(--accent); color: var(--accent); background: rgba(245, 158, 11, 0.12);">
+            <span>06</span>
+            <span class="flow-num-label" style="color: var(--accent);">Centerpiece</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4 style="color: var(--accent);">Sarojadala Netri</h4>
+            <span class="flow-piece-tag" style="color: var(--accent);">Grand Main Centerpiece</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Shankarabharanam (29th Melakarta)</span>
+            <span class="flow-tala-composer">Adi Talam (2-Kalai - 16 Beats) • Syama Sastri</span>
+          </div>
+          <span class="flow-action-badge" style="background: rgba(245, 158, 11, 0.15); border-color: var(--accent); color: var(--accent-light);">Alapana, Tanam, Neraval & Tani</span>
+        </div>
+
+        <!-- 7. Keerthanam -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>07</span>
+            <span class="flow-num-label">Post-Main</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>ArabhiManam</h4>
+            <span class="flow-piece-tag">Fast-paced Kriti</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Arabhi / Begada</span>
+            <span class="flow-tala-composer">Adi Talam (8 Beats) • Patnam Subramanya Iyer</span>
+          </div>
+          <span class="flow-action-badge">Chittaswaras</span>
+        </div>
+
+        <!-- 8. Thiruppavai -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>08</span>
+            <span class="flow-num-label">Bhakti</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Andru Ivulagam</h4>
+            <span class="flow-piece-tag">Thiruppavai (Pasuram 24)</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Sindhu Bhairavi</span>
+            <span class="flow-tala-composer">Adi Talam • Sri Andal</span>
+          </div>
+          <span class="flow-action-badge">Tamil Divya Prabandham</span>
+        </div>
+
+        <!-- 9. Kavadi Chindu -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>09</span>
+            <span class="flow-num-label">Folk</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Valli Kanavan Perai</h4>
+            <span class="flow-piece-tag">Murugan Kavadi Chindu</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Chenchurutti</span>
+            <span class="flow-tala-composer">Tisra Nadai / Adi • Traditional Folk Metre</span>
+          </div>
+          <span class="flow-action-badge">Syncopated Rhythm</span>
+        </div>
+
+        <!-- 10. Thillana -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>10</span>
+            <span class="flow-num-label">Crescendo</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Maand Thillana</h4>
+            <span class="flow-piece-tag">Rhythmic Finale</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Mand (Maand)</span>
+            <span class="flow-tala-composer">Adi Talam (8 Beats) • Lalgudi G. Jayaraman</span>
+          </div>
+          <span class="flow-action-badge">Sollukattu Jathis</span>
+        </div>
+
+        <!-- 11. Benediction -->
+        <div class="flow-step-card">
+          <div class="flow-num-badge">
+            <span>11</span>
+            <span class="flow-num-label">Closing</span>
+          </div>
+          <div class="flow-piece-info">
+            <h4>Harivarasanam & Mangalam</h4>
+            <span class="flow-piece-tag">Benediction & Auspicious Blessing</span>
+          </div>
+          <div class="flow-raga-meta">
+            <span class="flow-raga-name">Ragam Madhyamavathi & Saurashtram</span>
+            <span class="flow-tala-composer">Adi Talam • Saint Tyagaraja & Kumbakudi Kulathur Iyer</span>
+          </div>
+          <span class="flow-action-badge">Peace & Blessings</span>
+        </div>
+
+      </div>
     </section>
 
-    <!-- Visual Margam Sequence Roadmap -->
-    <section class="roadmap-container">
-      <div class="roadmap-header">
-        <h3><span>🎼</span> Concert Flow & Repertoire Progression</h3>
-        <span class="small muted">Full Repertoire (11 Pieces)</span>
-      </div>
-      <div class="roadmap-steps">
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">1. Varnam</div>
-          <div class="roadmap-step-title">Viriboni</div>
-          <div class="roadmap-step-raga">Bhairavi</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">2. Invocatory</div>
-          <div class="roadmap-step-title">Gajavadana</div>
-          <div class="roadmap-step-raga">Hamsadhwani</div>
-        </div>
-        <div class="roadmap-step highlight">
-          <div class="roadmap-step-num">3. Sub-Main</div>
-          <div class="roadmap-step-title">Jnanamosagarada</div>
-          <div class="roadmap-step-raga">Poorvikalyani</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">4. Keerthanam</div>
-          <div class="roadmap-step-title">Ananda Natana</div>
-          <div class="roadmap-step-raga">Kedaram</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">5. Keerthanam</div>
-          <div class="roadmap-step-title">Bhogendra</div>
-          <div class="roadmap-step-raga">Kuntalavarali</div>
-        </div>
-        <div class="roadmap-step highlight">
-          <div class="roadmap-step-num">6. Grand Main</div>
-          <div class="roadmap-step-title">Sarojadalanetri</div>
-          <div class="roadmap-step-raga">Shankarabharanam</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">7. Keerthanam</div>
-          <div class="roadmap-step-title">ArabhiManam</div>
-          <div class="roadmap-step-raga">Arabhi / Begada</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">8. Thiruppavai</div>
-          <div class="roadmap-step-title">Andru Ivulagam</div>
-          <div class="roadmap-step-raga">Sindhu Bhairavi</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">9. Kavadi Chindu</div>
-          <div class="roadmap-step-title">Valli Kanavan</div>
-          <div class="roadmap-step-raga">Chenchurutti</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">10. Thillana</div>
-          <div class="roadmap-step-title">Maand Thillana</div>
-          <div class="roadmap-step-raga">Mand</div>
-        </div>
-        <div class="roadmap-step">
-          <div class="roadmap-step-num">11. Benediction</div>
-          <div class="roadmap-step-title">Harivarasanam</div>
-          <div class="roadmap-step-raga">Madhyamavathi</div>
+    <!-- ===================================================================
+         Section 2: Detailed Repertoire Bento Cards & Song Explanations
+         =================================================================== -->
+    <div style="margin-top: 48px; border-top: 1px solid var(--line); padding-top: 36px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; flex-wrap: wrap; gap: 12px;">
+        <div>
+          <span class="eyebrow">Detailed Commentary</span>
+          <h2 style="margin: 0; color: var(--text-bright); font-size: 1.6rem;">Song-by-Song Details & Sahityam</h2>
         </div>
       </div>
-    </section>
 
-    <!-- Filter Controls -->
-    <div class="program-controls">
-      <span class="small muted">Filter repertoire:</span>
-      <div class="filter-group">
-        <button class="filter-btn active" data-filter="all">All Pieces (11)</button>
-        <button class="filter-btn" data-filter="Varnam">Varnam</button>
-        <button class="filter-btn" data-filter="Invocatory">Invocatory</button>
-        <button class="filter-btn" data-filter="Sub-Main">Sub-Main</button>
-        <button class="filter-btn" data-filter="Keerthanam">Keerthanams</button>
-        <button class="filter-btn" data-filter="Centerpiece">Grand Main</button>
-        <button class="filter-btn" data-filter="Devotional">Devotional & Folk</button>
-        <button class="filter-btn" data-filter="Thillana">Thillana & Harivarasanam</button>
+      <!-- Filter Controls -->
+      <div class="program-controls">
+        <span class="small muted">Filter repertoire:</span>
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">All Pieces (11)</button>
+          <button class="filter-btn" data-filter="Varnam">Varnam</button>
+          <button class="filter-btn" data-filter="Invocatory">Invocatory</button>
+          <button class="filter-btn" data-filter="Sub-Main">Sub-Main</button>
+          <button class="filter-btn" data-filter="Keerthanam">Keerthanams</button>
+          <button class="filter-btn" data-filter="Centerpiece">Grand Main</button>
+          <button class="filter-btn" data-filter="Devotional">Devotional & Folk</button>
+          <button class="filter-btn" data-filter="Thillana">Thillana & Harivarasanam</button>
+        </div>
       </div>
+
+      <!-- Repertoire Bento List (Matching SanMargam Exact 1fr:2fr Grid) -->
+      <section class="program-bento" id="program-bento-container">
+
+        <!-- Item 1: Bhairavi Ata Thala Varnam -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Varnam</span>
+            <span class="program-item-number">1</span>
+            <div class="program-art-icon">👑</div>
+            <div class="program-art-title">Viriboni</div>
+            <div class="program-art-raga">Bhairavi Ata Thala Varnam</div>
+            <div class="program-art-tala">Talam: Khanda Jathi Ata (14 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Bhashanga Raga Scale:</strong>
+              <span>Arohanam: S R₂ G₂ M₁ P D₂ N₂ Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₂ D₁ P M₁ G₂ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>1. Viriboni (Bhairavi Ata Thala Varnam)</h3>
+            <p>
+              Revered across generations as the "King of all Varnams" (<em>Varnangalil Raja</em>), "Viriboni" is the supreme benchmark of vocal discipline, breath control, and rhythmic command in the Carnatic pantheon.
+            </p>
+            <p>
+              Composed in the majestic Bhashanga ragam Bhairavi and set to the intricate 14-beat Ata talam, this piece traverses all three octaves. Sahana renders both the Purvanga (Pallavi, Anupallavi, Mukthayi Swaram) and Uttaranga (Charanam and four expansive Chittaswara suites) in two speeds (Prathama and Dwitiya Kalam), setting an authoritative, classical tone for the debut concert.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Bhairavi (20th Melakarta Janya - Bhashanga)</div>
+              <div class="meta-item"><strong>Talam:</strong> Khanda Jathi Ata Talam (14 Beats)</div>
+              <div class="meta-item"><strong>Composer:</strong> Pacchimiriam Adiyappa</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 2: Gajavadana Beduve -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Invocatory</span>
+            <span class="program-item-number">2</span>
+            <div class="program-art-icon">🐘</div>
+            <div class="program-art-title">Gajavadana Beduve</div>
+            <div class="program-art-raga">Ragam Hamsadhwani</div>
+            <div class="program-art-tala">Talam: Adi (8 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Raga Scale (The Swan's Call):</strong>
+              <span>Arohanam: S R₂ G₃ P N₃ Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₃ P G₃ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>2. Gajavadana Beduve</h3>
+            <p>
+              A sparkling invocatory Devaranama in Kannada by the Father of Carnatic Music, Saint Purandara Dasa, offering heartfelt salutations to the elephant-faced Lord Ganesha to remove obstacles and bless the auspicious graduation debut.
+            </p>
+            <p>
+              Set to the effervescent pentatonic Ragam Hamsadhwani ("the voice of the swan"), this piece overflows with joyous energy. Sahana renders dynamic Kalpanaswarams (spontaneous swara permutations) highlighting the symmetry of the notes and engaging in a spirited rhythmic exchange with the violin and mridangam.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Hamsadhwani (29th Melakarta Janya)</div>
+              <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
+              <div class="meta-item"><strong>Composer:</strong> Saint Purandara Dasa</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 3: Jnanamosagarada (Sub-Main) -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Sub-Main</span>
+            <span class="program-item-number">3</span>
+            <div class="program-art-icon">✨</div>
+            <div class="program-art-title">Jnanamosagarada</div>
+            <div class="program-art-raga">Ragam Poorvikalyani</div>
+            <div class="program-art-tala">Talam: Rupakam (3 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Prathi Madhyama Scale:</strong>
+              <span>Arohanam: S R₁ G₃ M₂ P D₁ P Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₃ D₁ P M₂ G₃ R₁ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>3. Jnanamosagarada (Sub-Main)</h3>
+            <p>
+              The Sub-Main centerpiece of the first half. A profound philosophical masterpiece by Saint Tyagaraja beseeching Lord Rama: <em>"Will You not bestow upon me supreme wisdom (Jnana) and the path of divine truth?"</em>
+            </p>
+            <p>
+              Poorvikalyani is renowned for its intense emotional depth (gambhiram) and prathi madhyama curves. Sahana presents a structured Raga Alapana delineating the hallmark phrases of Poorvikalyani, followed by the kriti with brisk Neraval at <em>"Paramathmudu"</em> and multi-speed kalpanaswaras concluding in a synchronized makutam.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Poorvikalyani (53rd Melakarta Janya)</div>
+              <div class="meta-item"><strong>Talam:</strong> Rupakam (3 Beats / 6 Matras)</div>
+              <div class="meta-item"><strong>Composer:</strong> Saint Tyagaraja</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 4: Ananda Natana Prakasam -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Keerthanam</span>
+            <span class="program-item-number">4</span>
+            <div class="program-art-icon">🔥</div>
+            <div class="program-art-title">Ananda Natana Prakasam</div>
+            <div class="program-art-raga">Ragam Kedaram</div>
+            <div class="program-art-tala">Talam: Misra Chapu (7 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Akasa Lingam Kriti:</strong>
+              <span>Arohanam: S M₁ G₃ M₁ P N₃ Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₃ P M₁ G₃ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>4. Ananda Natana Prakasam</h3>
+            <p>
+              One of the monumental Pancha Bhoota Sthala Kritis representing the Element of Ether/Space (Akasa Lingam) at the sacred temple of Chidambaram.
+            </p>
+            <p>
+              Composed in majestic Sanskrit by Muthuswami Dikshitar, this grand kriti vividly describes Lord Shiva's cosmic dance of bliss (Ananda Tandavam) in the Golden Hall of Chidambaram. The stately vakra phrases of Ragam Kedaram paired with the rhythmic 7-beat Misra Chapu talam evoke cosmic majesty and deep spiritual wonder.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Kedaram (29th Melakarta Janya)</div>
+              <div class="meta-item"><strong>Talam:</strong> Misra Chapu (7 Beats / 3+4)</div>
+              <div class="meta-item"><strong>Composer:</strong> Muthuswami Dikshitar</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 5: Bhogendra Sayinam -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Keerthanam</span>
+            <span class="program-item-number">5</span>
+            <div class="program-art-icon">🌊</div>
+            <div class="program-art-title">Bhogendra Sayinam</div>
+            <div class="program-art-raga">Ragam Kuntalavarali</div>
+            <div class="program-art-tala">Talam: Khanda Chapu (5 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Cascading Raga Scale:</strong>
+              <span>Arohanam: S M₁ P D₂ N₂ D₂ Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₂ D₂ P M₁ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>5. Bhogendra Sayinam</h3>
+            <p>
+              A buoyant, melodious Sanskrit composition by the royal composer Maharaja Swathi Thirunal extolling Lord Vishnu reclining peacefully upon the celestial serpent king, Adisesha.
+            </p>
+            <p>
+              The unique scalar contours of Ragam Kuntalavarali (omitting Rishabham and Gandharam) combined with the lively 5-beat Khanda Chapu cycle create an undulating, wavy rhythm that mirrors the gentle sway of the ocean of milk (Ksheerasagara). Features brisk cascading chittaswaras.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Kuntalavarali (28th Melakarta Janya)</div>
+              <div class="meta-item"><strong>Talam:</strong> Khanda Chapu (5 Beats)</div>
+              <div class="meta-item"><strong>Composer:</strong> Maharaja Swathi Thirunal</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 6: Sarojadalanetri (Grand Main Centerpiece) -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Grand Main Centerpiece</span>
+            <span class="program-item-number">6</span>
+            <div class="program-art-icon">🌺</div>
+            <div class="program-art-title">Sarojadalanetri</div>
+            <div class="program-art-raga">Ragam Shankarabharanam</div>
+            <div class="program-art-tala">Talam: Adi (2-Kalai - 16 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>29th Melakarta (The Royal Ragam):</strong>
+              <span>Arohanam: S R₂ G₃ M₁ P D₂ N₃ Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>6. Sarojadala Netri (Grand Main Centerpiece)</h3>
+            <p>
+              The crowning zenith and monumental centerpiece of the concert. Syama Sastri's "Sarojadala Netri" is one of the grandest gems in Carnatic music, praising the lotus-eyed Goddess Meenakshi with unmatched rhythmic architecture and lyrical majesty.
+            </p>
+            <p>
+              This centerpiece is presented through elaborate classical Manodharma:<br/>
+              <strong>1. Grand Raga Alapana:</strong> An expansive, multi-octave exploration of Shankarabharanam across Mandra, Madhya, and Tara sthayis.<br/>
+              <strong>2. Tanam:</strong> Majestic rhythmic vocalization simulating the pluck of the Veena.<br/>
+              <strong>3. Kriti & Neraval:</strong> Deep thematic improvisation at <em>"Sama Gana Vinodini"</em> exploring Goddess Meenakshi as the lover of celestial music.<br/>
+              <strong>4. Kalpanaswaras:</strong> Mathematically rich swara korvais in 2-kalai Adi talam.<br/>
+              <strong>5. Tani Avartanam:</strong> An exhilarating percussion duel by Chi. Anirudh Suresh on Mridangam.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Shankarabharanam (29th Melakarta)</div>
+              <div class="meta-item"><strong>Talam:</strong> Adi Talam (2-Kalai - 16 Beats)</div>
+              <div class="meta-item"><strong>Composer:</strong> Syama Sastri (Carnatic Trinity)</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar & Ensemble Solo</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 7: Abhimanam Vennamu -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Keerthanam</span>
+            <span class="program-item-number">7</span>
+            <div class="program-art-icon">🕊️</div>
+            <div class="program-art-title">ArabhiManam</div>
+            <div class="program-art-raga">Ragam Arabhi / Begada</div>
+            <div class="program-art-tala">Talam: Adi (8 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Audava-Sampoorna Scale:</strong>
+              <span>Arohanam: S R₂ M₁ P D₂ Ṡ</span><br/>
+              <span>Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>7. Abhimanam Vennamu (ArabhiManam)</h3>
+            <p>
+              A vibrant, uplifting piece pleading for the Lord's unconditional grace and affection: <em>"Why have You withheld Your affection (Abhimanam) from this devoted servant?"</em>
+            </p>
+            <p>
+              Ragam Arabhi is characterized by exhilarating, bright, swift phrases that evoke courage, enthusiasm (veera), and devotion. The piece features sparkling chittaswaras that sustain a celebratory tempo following the grand centerpiece.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Arabhi / Begada</div>
+              <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
+              <div class="meta-item"><strong>Composer:</strong> Patnam Subramanya Iyer / Saint Tyagaraja</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 8: Andru Ivulagam - Thurupavai - Sindhu Bhairavi -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Thiruppavai</span>
+            <span class="program-item-number">8</span>
+            <div class="program-art-icon">🦚</div>
+            <div class="program-art-title">Andru Ivulagam</div>
+            <div class="program-art-raga">Ragam Sindhu Bhairavi</div>
+            <div class="program-art-tala">Talam: Adi Talam (8 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Sacred Tamil Thiruppavai (Pasuram 24):</strong>
+              <span>Desiya Ragam with All 12 Svarasthanas</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>8. Andru Ivulagam (Thiruppavai - Sindhu Bhairavi)</h3>
+            <p>
+              The celebrated 24th Pasuram of Andal's sacred Tamil Thiruppavai, singing praises of Lord Vishnu's cosmic footsteps measuring the entire universe (Trivikrama Avatara): <em>"Praise be to Thy feet that measured this whole world of yore!"</em>
+            </p>
+            <p>
+              Rendered in the deeply emotional and universal raga Sindhu Bhairavi, this piece captures Andal's sublime surrender and unconditional bhakti. Sahana renders this with soulful Tamil diction and tender microtonal curves.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Sindhu Bhairavi</div>
+              <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
+              <div class="meta-item"><strong>Composer:</strong> Kotai Nachiyar (Sri Andal)</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 9: Valli kanavan perai - Kavadichinthu -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Kavadi Chindu</span>
+            <span class="program-item-number">9</span>
+            <div class="program-art-icon">🪘</div>
+            <div class="program-art-title">Valli Kanavan Perai</div>
+            <div class="program-art-raga">Ragam Chenchurutti</div>
+            <div class="program-art-tala">Talam: Tisra Nadai / Adi</div>
+            <div class="program-raga-scale">
+              <strong>Folk Rhythm Metre:</strong>
+              <span>Lively syncopated Tisra Nadai</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>9. Valli Kanavan Perai (Kavadi Chindu)</h3>
+            <p>
+              The infectious, pulsating folk-classical Kavadi Chindu dedicated to Lord Muruga: <em>"Chant the name of Valli's consort, oh parrot, and sing His eternal glories!"</em>
+            </p>
+            <p>
+              Characterized by lilting syncopated rhythms (Tisra Nadai) and joyful, catchy refrains, this piece showcases Sahana's versatility in shifting seamlessly from heavy classical manodharma to soulful, spirited regional folk traditions.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Chenchurutti / Folk Ragamalika</div>
+              <div class="meta-item"><strong>Talam:</strong> Tisra Nadai / Adi</div>
+              <div class="meta-item"><strong>Composer:</strong> Traditional / Kavi Kunjara Bharati</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 10: Maand Thillana -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Thillana</span>
+            <span class="program-item-number">10</span>
+            <div class="program-art-icon">⚡</div>
+            <div class="program-art-title">Maand Thillana</div>
+            <div class="program-art-raga">Ragam Mand (Maand)</div>
+            <div class="program-art-tala">Talam: Adi (8 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Lalgudi Jayaraman Masterpiece:</strong>
+              <span>Arohanam: S G₃ M₁ P D₂ Ṡ | Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>10. Maand Thillana</h3>
+            <p>
+              The rhythmic crescendo and aesthetic climax of the concert. Composed by the legendary violin maestro Lalgudi G. Jayaraman in the lilting, sweet Ragam Mand (Maand).
+            </p>
+            <p>
+              Driven by crisp rhythmic sollukattus (percussive syllables like <em>"Ta Dhim Ta Na"</em>), brisk swara passages, and playful cross-rhythmic syncopations, the vocalist, violinist Kum. Aishwarya Anand, and mridangist Chi. Anirudh Suresh lock into a thrilling, synchronized finale that fills the auditorium with celebratory ecstasy.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Mand (Maand)</div>
+              <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
+              <div class="meta-item"><strong>Composer:</strong> Lalgudi G. Jayaraman</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar & Ensemble</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Item 11: Harivarasanam & Pavamana Mangalam -->
+        <article class="program-item">
+          <div class="program-image">
+            <span class="program-item-badge">Benediction</span>
+            <span class="program-item-number">11</span>
+            <div class="program-art-icon">🪔</div>
+            <div class="program-art-title">Harivarasanam & Mangalam</div>
+            <div class="program-art-raga">Ragam Madhyamavathi</div>
+            <div class="program-art-tala">Talam: Adi (8 Beats)</div>
+            <div class="program-raga-scale">
+              <strong>Auspicious Closing Raga:</strong>
+              <span>S R₂ M₁ P N₂ Ṡ | Ṡ N₂ P M₁ R₂ S</span>
+            </div>
+          </div>
+          <div class="program-details">
+            <h3>11. Harivarasanam & Pavamana Mangalam</h3>
+            <p>
+              The sacred conclusion of the concert. It begins with "Harivarasanam", the celestial lullaby sung every night at the Sabarimala sanctum, and concludes with the auspicious Tyagaraja Mangalam "Pavamana".
+            </p>
+            <p>
+              Rendered in the supreme peace of Ragam Madhyamavathi—which according to tradition dissolves any minor tonal imbalances and leaves only harmony—Sahana, Kum. Aishwarya Anand, and Chi. Anirudh Suresh offer their gratitude to the Gurus, ancestors, musicians, and rasikas, praying for universal health, peace, and prosperity for all.
+            </p>
+            <div class="program-meta">
+              <div class="meta-item"><strong>Ragam:</strong> Madhyamavathi & Saurashtram</div>
+              <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
+              <div class="meta-item"><strong>Composer:</strong> Kumbakudi Kulathur Iyer & Saint Tyagaraja</div>
+              <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar & Ensemble</div>
+            </div>
+          </div>
+        </article>
+
+      </section>
     </div>
-
-    <!-- Repertoire Bento List (Matching SanMargam Exact 1fr:2fr Grid) -->
-    <section class="program-bento" id="program-bento-container">
-
-      <!-- Item 1: Bhairavi Ata Thala Varnam -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Varnam</span>
-          <span class="program-item-number">1</span>
-          <div class="program-art-icon">👑</div>
-          <div class="program-art-title">Viriboni</div>
-          <div class="program-art-raga">Bhairavi Ata Thala Varnam</div>
-          <div class="program-art-tala">Talam: Khanda Jathi Ata (14 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Bhashanga Raga Scale:</strong>
-            <span>Arohanam: S R₂ G₂ M₁ P D₂ N₂ Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₂ D₁ P M₁ G₂ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>1. Viriboni (Bhairavi Ata Thala Varnam)</h3>
-          <p>
-            Revered across generations as the "King of all Varnams" (<em>Varnangalil Raja</em>), "Viriboni" is the supreme benchmark of vocal discipline, breath control, and rhythmic command in the Carnatic pantheon.
-          </p>
-          <p>
-            Composed in the majestic Bhashanga ragam Bhairavi and set to the intricate 14-beat Ata talam, this piece traverses all three octaves. Sahana renders both the Purvanga (Pallavi, Anupallavi, Mukthayi Swaram) and Uttaranga (Charanam and four expansive Chittaswara suites) in two speeds (Prathama and Dwitiya Kalam), setting an authoritative, classical tone for the debut concert.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Bhairavi (20th Melakarta Janya - Bhashanga)</div>
-            <div class="meta-item"><strong>Talam:</strong> Khanda Jathi Ata Talam (14 Beats)</div>
-            <div class="meta-item"><strong>Composer:</strong> Pacchimiriam Adiyappa</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 2: Gajavadana Beduve -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Invocatory</span>
-          <span class="program-item-number">2</span>
-          <div class="program-art-icon">🐘</div>
-          <div class="program-art-title">Gajavadana Beduve</div>
-          <div class="program-art-raga">Ragam Hamsadhwani</div>
-          <div class="program-art-tala">Talam: Adi (8 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Raga Scale (The Swan's Call):</strong>
-            <span>Arohanam: S R₂ G₃ P N₃ Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₃ P G₃ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>2. Gajavadana Beduve</h3>
-          <p>
-            A sparkling invocatory Devaranama in Kannada by the Father of Carnatic Music, Saint Purandara Dasa, offering heartfelt salutations to the elephant-faced Lord Ganesha to remove obstacles and bless the auspicious graduation debut.
-          </p>
-          <p>
-            Set to the effervescent pentatonic Ragam Hamsadhwani ("the voice of the swan"), this piece overflows with joyous energy. Sahana renders dynamic Kalpanaswarams (spontaneous swara permutations) highlighting the symmetry of the notes and engaging in a spirited rhythmic exchange with the violin and mridangam.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Hamsadhwani (29th Melakarta Janya)</div>
-            <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
-            <div class="meta-item"><strong>Composer:</strong> Saint Purandara Dasa</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 3: Jnanamosagarada (Sub-Main) -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Sub-Main</span>
-          <span class="program-item-number">3</span>
-          <div class="program-art-icon">✨</div>
-          <div class="program-art-title">Jnanamosagarada</div>
-          <div class="program-art-raga">Ragam Poorvikalyani</div>
-          <div class="program-art-tala">Talam: Rupakam (3 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Prathi Madhyama Scale:</strong>
-            <span>Arohanam: S R₁ G₃ M₂ P D₁ P Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₃ D₁ P M₂ G₃ R₁ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>3. Jnanamosagarada (Sub-Main)</h3>
-          <p>
-            The Sub-Main centerpiece of the first half. A profound philosophical masterpiece by Saint Tyagaraja beseeching Lord Rama: <em>"Will You not bestow upon me supreme wisdom (Jnana) and the path of divine truth?"</em>
-          </p>
-          <p>
-            Poorvikalyani is renowned for its intense emotional depth (gambhiram) and prathi madhyama curves. Sahana presents a structured Raga Alapana delineating the hallmark phrases of Poorvikalyani, followed by the kriti with brisk Neraval at <em>"Paramathmudu"</em> and multi-speed kalpanaswaras concluding in a synchronized makutam.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Poorvikalyani (53rd Melakarta Janya)</div>
-            <div class="meta-item"><strong>Talam:</strong> Rupakam (3 Beats / 6 Matras)</div>
-            <div class="meta-item"><strong>Composer:</strong> Saint Tyagaraja</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 4: Ananda Natana Prakasam -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Keerthanam</span>
-          <span class="program-item-number">4</span>
-          <div class="program-art-icon">🔥</div>
-          <div class="program-art-title">Ananda Natana Prakasam</div>
-          <div class="program-art-raga">Ragam Kedaram</div>
-          <div class="program-art-tala">Talam: Misra Chapu (7 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Akasa Lingam Kriti:</strong>
-            <span>Arohanam: S M₁ G₃ M₁ P N₃ Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₃ P M₁ G₃ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>4. Ananda Natana Prakasam</h3>
-          <p>
-            One of the monumental Pancha Bhoota Sthala Kritis representing the Element of Ether/Space (Akasa Lingam) at the sacred temple of Chidambaram.
-          </p>
-          <p>
-            Composed in majestic Sanskrit by Muthuswami Dikshitar, this grand kriti vividly describes Lord Shiva's cosmic dance of bliss (Ananda Tandavam) in the Golden Hall of Chidambaram. The stately vakra phrases of Ragam Kedaram paired with the rhythmic 7-beat Misra Chapu talam evoke cosmic majesty and deep spiritual wonder.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Kedaram (29th Melakarta Janya)</div>
-            <div class="meta-item"><strong>Talam:</strong> Misra Chapu (7 Beats / 3+4)</div>
-            <div class="meta-item"><strong>Composer:</strong> Muthuswami Dikshitar</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 5: Bhogendra Sayinam -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Keerthanam</span>
-          <span class="program-item-number">5</span>
-          <div class="program-art-icon">🌊</div>
-          <div class="program-art-title">Bhogendra Sayinam</div>
-          <div class="program-art-raga">Ragam Kuntalavarali</div>
-          <div class="program-art-tala">Talam: Khanda Chapu (5 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Cascading Raga Scale:</strong>
-            <span>Arohanam: S M₁ P D₂ N₂ D₂ Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₂ D₂ P M₁ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>5. Bhogendra Sayinam</h3>
-          <p>
-            A buoyant, melodious Sanskrit composition by the royal composer Maharaja Swathi Thirunal extolling Lord Vishnu reclining peacefully upon the celestial serpent king, Adisesha.
-          </p>
-          <p>
-            The unique scalar contours of Ragam Kuntalavarali (omitting Rishabham and Gandharam) combined with the lively 5-beat Khanda Chapu cycle create an undulating, wavy rhythm that mirrors the gentle sway of the ocean of milk (Ksheerasagara). Features brisk cascading chittaswaras.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Kuntalavarali (28th Melakarta Janya)</div>
-            <div class="meta-item"><strong>Talam:</strong> Khanda Chapu (5 Beats)</div>
-            <div class="meta-item"><strong>Composer:</strong> Maharaja Swathi Thirunal</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 6: Sarojadalanetri (Grand Main Centerpiece) -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Grand Main Centerpiece</span>
-          <span class="program-item-number">6</span>
-          <div class="program-art-icon">🌺</div>
-          <div class="program-art-title">Sarojadalanetri</div>
-          <div class="program-art-raga">Ragam Shankarabharanam</div>
-          <div class="program-art-tala">Talam: Adi (2-Kalai - 16 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>29th Melakarta (The Royal Ragam):</strong>
-            <span>Arohanam: S R₂ G₃ M₁ P D₂ N₃ Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>6. Sarojadala Netri (Grand Main Centerpiece)</h3>
-          <p>
-            The crowning zenith and monumental centerpiece of the concert. Syama Sastri's "Sarojadala Netri" is one of the grandest gems in Carnatic music, praising the lotus-eyed Goddess Meenakshi with unmatched rhythmic architecture and lyrical majesty.
-          </p>
-          <p>
-            This centerpiece is presented through elaborate classical Manodharma:<br/>
-            <strong>1. Grand Raga Alapana:</strong> An expansive, multi-octave exploration of Shankarabharanam across Mandra, Madhya, and Tara sthayis.<br/>
-            <strong>2. Tanam:</strong> Majestic rhythmic vocalization simulating the pluck of the Veena.<br/>
-            <strong>3. Kriti & Neraval:</strong> Deep thematic improvisation at <em>"Sama Gana Vinodini"</em> exploring Goddess Meenakshi as the lover of celestial music.<br/>
-            <strong>4. Kalpanaswaras:</strong> Mathematically rich swara korvais in 2-kalai Adi talam.<br/>
-            <strong>5. Tani Avartanam:</strong> An exhilarating percussion duel by Chi. Anirudh Suresh on Mridangam.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Shankarabharanam (29th Melakarta)</div>
-            <div class="meta-item"><strong>Talam:</strong> Adi Talam (2-Kalai - 16 Beats)</div>
-            <div class="meta-item"><strong>Composer:</strong> Syama Sastri (Carnatic Trinity)</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar & Ensemble Solo</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 7: Abhimanam Vennamu -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Keerthanam</span>
-          <span class="program-item-number">7</span>
-          <div class="program-art-icon">🕊️</div>
-          <div class="program-art-title">ArabhiManam</div>
-          <div class="program-art-raga">Ragam Arabhi / Begada</div>
-          <div class="program-art-tala">Talam: Adi (8 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Audava-Sampoorna Scale:</strong>
-            <span>Arohanam: S R₂ M₁ P D₂ Ṡ</span><br/>
-            <span>Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>7. Abhimanam Vennamu (ArabhiManam)</h3>
-          <p>
-            A vibrant, uplifting piece pleading for the Lord's unconditional grace and affection: <em>"Why have You withheld Your affection (Abhimanam) from this devoted servant?"</em>
-          </p>
-          <p>
-            Ragam Arabhi is characterized by exhilarating, bright, swift phrases that evoke courage, enthusiasm (veera), and devotion. The piece features sparkling chittaswaras that sustain a celebratory tempo following the grand centerpiece.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Arabhi / Begada</div>
-            <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
-            <div class="meta-item"><strong>Composer:</strong> Patnam Subramanya Iyer / Saint Tyagaraja</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 8: Andru Ivulagam - Thurupavai - Sindhu Bhairavi -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Thiruppavai</span>
-          <span class="program-item-number">8</span>
-          <div class="program-art-icon">🦚</div>
-          <div class="program-art-title">Andru Ivulagam</div>
-          <div class="program-art-raga">Ragam Sindhu Bhairavi</div>
-          <div class="program-art-tala">Talam: Adi Talam (8 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Sacred Tamil Thiruppavai (Pasuram 24):</strong>
-            <span>Desiya Ragam with All 12 Svarasthanas</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>8. Andru Ivulagam (Thiruppavai - Sindhu Bhairavi)</h3>
-          <p>
-            The celebrated 24th Pasuram of Andal's sacred Tamil Thiruppavai, singing praises of Lord Vishnu's cosmic footsteps measuring the entire universe (Trivikrama Avatara): <em>"Praise be to Thy feet that measured this whole world of yore!"</em>
-          </p>
-          <p>
-            Rendered in the deeply emotional and universal raga Sindhu Bhairavi, this piece captures Andal's sublime surrender and unconditional bhakti. Sahana renders this with soulful Tamil diction and tender microtonal curves.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Sindhu Bhairavi</div>
-            <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
-            <div class="meta-item"><strong>Composer:</strong> Kotai Nachiyar (Sri Andal)</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 9: Valli kanavan perai - Kavadichinthu -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Kavadi Chindu</span>
-          <span class="program-item-number">9</span>
-          <div class="program-art-icon">🪘</div>
-          <div class="program-art-title">Valli Kanavan Perai</div>
-          <div class="program-art-raga">Ragam Chenchurutti</div>
-          <div class="program-art-tala">Talam: Tisra Nadai / Adi</div>
-          <div class="program-raga-scale">
-            <strong>Folk Rhythm Metre:</strong>
-            <span>Lively syncopated Tisra Nadai</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>9. Valli Kanavan Perai (Kavadi Chindu)</h3>
-          <p>
-            The infectious, pulsating folk-classical Kavadi Chindu dedicated to Lord Muruga: <em>"Chant the name of Valli's consort, oh parrot, and sing His eternal glories!"</em>
-          </p>
-          <p>
-            Characterized by lilting syncopated rhythms (Tisra Nadai) and joyful, catchy refrains, this piece showcases Sahana's versatility in shifting seamlessly from heavy classical manodharma to soulful, spirited regional folk traditions.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Chenchurutti / Folk Ragamalika</div>
-            <div class="meta-item"><strong>Talam:</strong> Tisra Nadai / Adi</div>
-            <div class="meta-item"><strong>Composer:</strong> Traditional / Kavi Kunjara Bharati</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 10: Maand Thillana -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Thillana</span>
-          <span class="program-item-number">10</span>
-          <div class="program-art-icon">⚡</div>
-          <div class="program-art-title">Maand Thillana</div>
-          <div class="program-art-raga">Ragam Mand (Maand)</div>
-          <div class="program-art-tala">Talam: Adi (8 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Lalgudi Jayaraman Masterpiece:</strong>
-            <span>Arohanam: S G₃ M₁ P D₂ Ṡ | Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>10. Maand Thillana</h3>
-          <p>
-            The rhythmic crescendo and aesthetic climax of the concert. Composed by the legendary violin maestro Lalgudi G. Jayaraman in the lilting, sweet Ragam Mand (Maand).
-          </p>
-          <p>
-            Driven by crisp rhythmic sollukattus (percussive syllables like <em>"Ta Dhim Ta Na"</em>), brisk swara passages, and playful cross-rhythmic syncopations, the vocalist, violinist Kum. Aishwarya Anand, and mridangist Chi. Anirudh Suresh lock into a thrilling, synchronized finale that fills the auditorium with celebratory ecstasy.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Mand (Maand)</div>
-            <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
-            <div class="meta-item"><strong>Composer:</strong> Lalgudi G. Jayaraman</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar & Ensemble</div>
-          </div>
-        </div>
-      </article>
-
-      <!-- Item 11: Harivarasanam & Pavamana Mangalam -->
-      <article class="program-item">
-        <div class="program-image">
-          <span class="program-item-badge">Benediction</span>
-          <span class="program-item-number">11</span>
-          <div class="program-art-icon">🪔</div>
-          <div class="program-art-title">Harivarasanam & Mangalam</div>
-          <div class="program-art-raga">Ragam Madhyamavathi</div>
-          <div class="program-art-tala">Talam: Adi (8 Beats)</div>
-          <div class="program-raga-scale">
-            <strong>Auspicious Closing Raga:</strong>
-            <span>S R₂ M₁ P N₂ Ṡ | Ṡ N₂ P M₁ R₂ S</span>
-          </div>
-        </div>
-        <div class="program-details">
-          <h3>11. Harivarasanam & Pavamana Mangalam</h3>
-          <p>
-            The sacred conclusion of the concert. It begins with "Harivarasanam", the celestial lullaby sung every night at the Sabarimala sanctum, and concludes with the auspicious Tyagaraja Mangalam "Pavamana".
-          </p>
-          <p>
-            Rendered in the supreme peace of Ragam Madhyamavathi—which according to tradition dissolves any minor tonal imbalances and leaves only harmony—Sahana, Kum. Aishwarya Anand, and Chi. Anirudh Suresh offer their gratitude to the Gurus, ancestors, musicians, and rasikas, praying for universal health, peace, and prosperity for all.
-          </p>
-          <div class="program-meta">
-            <div class="meta-item"><strong>Ragam:</strong> Madhyamavathi & Saurashtram</div>
-            <div class="meta-item"><strong>Talam:</strong> Adi Talam</div>
-            <div class="meta-item"><strong>Composer:</strong> Kumbakudi Kulathur Iyer & Saint Tyagaraja</div>
-            <div class="meta-item"><strong>Performer:</strong> Kum. Sahana Kumar & Ensemble</div>
-          </div>
-        </div>
-      </article>
-
-    </section>
 
   </main>
 
@@ -511,6 +648,7 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="program.html">Program Guide (Repertoire)</a></li>
           <li><a href="artists.html">Sahana's Bio & Artists</a></li>
+          <li><a href="livestream.html">Live Stream</a></li>
         </ul>
       </div>
       <div>
