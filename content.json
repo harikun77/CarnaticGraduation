@@ -1,0 +1,259 @@
+{
+  "site": {
+    "title": "Kum. Sahana Kumar — Vocal Graduation Concert | Paramacharya School of Music",
+    "brand": "Paramacharya School of Music",
+    "rsvpUrl": "https://evite.me/carnatic-graduation-sahana",
+    "liveStreamUrl": "https://youtube.com/live",
+    "venue": "Saratoga Civic Theater",
+    "address": "13777 Fruitvale Avenue, Saratoga, CA 95070",
+    "date": "Sunday, August 30, 2026",
+    "time": "4:00 PM – 6:00 PM PDT",
+    "directionsUrl": "https://www.google.com/maps/dir/?api=1&destination=Saratoga%20Civic%20Theater%2C%2013777%20Fruitvale%20Ave%2C%20Saratoga%2C%20CA%2095070",
+    "chiefGuest": {
+      "title": "Chief Guest",
+      "name": "Sangeetha Kalanidhi Sri. Neyveli R. Santhanagopalan",
+      "description": "Distinguished veteran Carnatic vocalist, guru, and recipient of the highest honor in Carnatic music."
+    }
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Paramacharya School of Music • Sri Gurubhyo Namah",
+      "title": "Kum. Sahana Kumar",
+      "subtitle": "Vocal Graduation Concert under the able guidance of Guru Smt. Geetha Ravi, with blessings of the Almighty, Gurus, and Elders.",
+      "backgroundImage": "assets/hero-banner.jpg"
+    },
+    "about": "With the blessings of Almighty, Gurus and elders, Sahana Kumar will be performing her formal Vocal Graduation Concert on August 30th, 2026, presented by Paramacharya School of Music under the able guidance of Guru Smt. Geetha Ravi. In the Carnatic classical tradition, this milestone concert celebrates over a decade of rigorous sadhana in Sruti, Laya, Sahitya Bhava, and Manodharma Sangeetham.",
+    "stats": [
+      {
+        "label": "Years of Sadhana",
+        "value": "11+ Years"
+      },
+      {
+        "label": "Classical Repertoire",
+        "value": "11 Pieces"
+      },
+      {
+        "label": "Chief Guest",
+        "value": "Sri. Neyveli Santhanagopalan"
+      },
+      {
+        "label": "Venue",
+        "value": "Saratoga Civic Theater"
+      }
+    ]
+  },
+  "artists": {
+    "vocalist": {
+      "name": "Kum. Sahana Kumar",
+      "role": "Carnatic Vocalist",
+      "tagline": "Senior at Saratoga High School • Disciple of Guru Smt. Geetha Ravi",
+      "image": "assets/sahana.png",
+      "bio": [
+        "Kum. Sahana Kumar has been immersed in the sacred tradition of Carnatic classical vocal music for over 11 years under the dedicated and nurturing guidance of Guru Smt. Geetha Ravi at Paramacharya School of Music. Through years of disciplined vocal training, Sahana has developed a profound command over sruti shuddham (tonal purity), laya gnanam (rhythmic precision), and sahitya bhava (emotive interpretation of lyrical sanctity).",
+        "Beyond her individual vocal training, Sahana is deeply rooted in the youth classical music community. An active leader in the Carnatic Chamber Concerts (CCC) organization, she served as the Senior Editor of the CCC magazine for three years, curating articles celebrating young musicians and contributing through regular solo vocal presentations across regional stages.",
+        "Sahana is also an accomplished Bharatanatyam dancer who completed her dance Arangetram in 2024 through Vishwa Shanthi Dance Academy. This rare synergy between dance and music has gifted her a unique holistic appreciation for South Indian classical rhythm, gamakas, and spiritual storytelling.",
+        "At Saratoga High School, where she is a senior, Sahana is deeply engaged in the performing arts as a member of Choir, Drama, and Musical Theatre, and excels in the Media Arts Program (MAP). Outside the auditorium, she is a Varsity Water Polo goalkeeper and a passionate volunteer with USKids4Water, teaching English and mentoring students in rural Tamil Nadu."
+      ],
+      "highlights": [
+        "11+ Years Carnatic Vocal Sadhana with Guru Smt. Geetha Ravi",
+        "Senior Editor & Performer, Carnatic Chamber Concerts (CCC)",
+        "Bharatanatyam Arangetram Graduate (VSDA, 2024)",
+        "Saratoga High School Choir, Drama & Media Arts",
+        "USKids4Water Youth Leader & Educator"
+      ]
+    },
+    "guru": {
+      "name": "Guru Smt. Geetha Ravi",
+      "role": "Guru & Master Pedagogue",
+      "tagline": "Acclaimed Musician, Pedagogue & Director, Paramacharya School of Music",
+      "image": "assets/guru.jpg",
+      "bio": [
+        "Guru Smt. Geetha Ravi is a distinguished Carnatic vocalist and an esteemed guru in the San Francisco Bay Area, celebrated for her unwavering adherence to classical authenticity, crystalline diction, and deep musical bhava. Trained under legendary lineages of the Carnatic tradition, she brings decades of concert performance experience and pedagogical excellence to her disciples.",
+        "As the guiding force behind Paramacharya School of Music, Smt. Geetha Ravi instills in her students a comprehensive foundation in classical music—emphasizing pristine pitch fidelity, breath control, the nuances of intricate gamakas, and the intellectual rigor of manodharma improvisation (alapana, neraval, and kalpanaswarams).",
+        "Her disciples regularly perform at prominent classical festivals and prestigious youth platforms across the United States and India. Her nurturing mentorship balances high traditional standards with encouragement, inspiring students like Sahana to discover their authentic artistic voice."
+      ],
+      "highlights": [
+        "Director & Founder, Paramacharya School of Music",
+        "Decades of concert performance and pedagogical excellence",
+        "Exemplary lineage adhering to authentic Carnatic traditions",
+        "Mastery in teaching advanced Manodharma & Tala intricacies"
+      ]
+    },
+    "chiefGuest": {
+      "name": "Sangeetha Kalanidhi Sri. Neyveli R. Santhanagopalan",
+      "role": "Chief Guest",
+      "tagline": "Eminent Carnatic Vocalist, Guru, Vidwan & Sangeetha Kalanidhi Awardee",
+      "image": "assets/chief-guest.jpg",
+      "icon": "🏅",
+      "bio": "Sangeetha Kalanidhi Sri. Neyveli R. Santhanagopalan is one of the most revered and accomplished Carnatic vocalists of our era. Renowned for his deep traditionalism, profound knowledge of musicology, and soul-stirring manodharma sangeetham, he has performed across the globe for over four decades. As an extraordinary teacher and cultural ambassador, his gracious presence as Chief Guest bestows immense blessings upon Sahana's graduation concert."
+    },
+    "accompanists": [
+      {
+        "name": "Kum. Aishwarya Anand",
+        "role": "Violin Accompanist",
+        "instrument": "Violin (Pakkavadhyam)",
+        "guruLineage": "Disciple of Vidushi Smt. Anuradha Sridhar",
+        "image": "assets/accompanists/violin.jpg",
+        "icon": "🎻",
+        "bio": "Kum. Aishwarya Anand is a talented, sensitive violinist trained under the illustrious guidance of Vidushi Smt. Anuradha Sridhar (Lalgudi lineage). Aishwarya provides a melodious foundation, mirroring the vocalist's nuanced raga phrasing and engaging in vibrant, crisp kalpanaswara dialogues across complex tala cycles."
+      },
+      {
+        "name": "Chi. Anirudh Suresh",
+        "role": "Mridangam Accompanist",
+        "instrument": "Mridangam (Pradhana Laya Vadhyam)",
+        "guruLineage": "Disciple of Vidwan Sri Ravindrabharathy Sridharan",
+        "image": "assets/accompanists/mridangam.jpg",
+        "icon": "🥁",
+        "bio": "Chi. Anirudh Suresh is a powerhouse percussionist who has undergone rigorous gurukulam training under the renowned Vidwan Sri Ravindrabharathy Sridharan (Nadasudha). Anirudh anchors the concert with resounding naadham, pristine stroke clarity, dynamic sarvalaghu patterns, and an electrifying Tani Avartanam percussion solo."
+      }
+    ]
+  },
+  "program": {
+    "subtitle": "The complete curated concert repertoire featuring traditional compositions across Sanskrit, Telugu, Kannada, and Tamil.",
+    "items": [
+      {
+        "number": 1,
+        "category": "Varnam",
+        "title": "Viriboni (Bhairavi Ata Thala Varnam)",
+        "ragam": "Bhairavi (Janya of 20th Melakarta Natabhairavi - Bhashanga Ragam)",
+        "talam": "Khanda Jathi Ata Talam (14 Beats)",
+        "composer": "Pacchimiriam Adiyappa",
+        "deity": "Lord Varadaraja of Kanchipuram",
+        "visualIcon": "👑",
+        "scale": "Arohanam: S R₂ G₂ M₁ P D₂ N₂ Ṡ | Avarohanam: Ṡ N₂ D₁ P M₁ G₂ R₂ S",
+        "overview": "Revered across generations as the 'King of all Varnams' (Varnangalil Raja), 'Viriboni' is the supreme benchmark of vocal discipline, breath control, and rhythmic command in the Carnatic pantheon.",
+        "details": "Composed in the majestic, multifaceted Bhashanga ragam Bhairavi and set to the intricate 14-beat Ata talam, this piece traverses all three octaves. Sahana renders both the Purvanga (Pallavi, Anupallavi, Mukthayi Swaram) and Uttaranga (Charanam and four expansive Chittaswara suites) in two speeds (Prathama and Dwitiya Kalam), setting an authoritative, classical tone for the debut concert."
+      },
+      {
+        "number": 2,
+        "category": "Invocatory",
+        "title": "Gajavadana Beduve",
+        "ragam": "Hamsadhwani (Janya of 29th Melakarta Dheerasankarabharanam)",
+        "talam": "Adi Talam (8 Beats)",
+        "composer": "Saint Purandara Dasa (Sangita Pitamaha)",
+        "deity": "Lord Ganesha (Gajavadana / Gauri Tanaya)",
+        "visualIcon": "🐘",
+        "scale": "Arohanam: S R₂ G₃ P N₃ Ṡ | Avarohanam: Ṡ N₃ P G₃ R₂ S",
+        "overview": "A sparkling invocatory Devaranama in Kannada by the Father of Carnatic Music, Saint Purandara Dasa, offering heartfelt salutations to the elephant-faced Lord Ganesha to remove obstacles and bless the auspicious debut.",
+        "details": "Set to the effervescent pentatonic Ragam Hamsadhwani ('the voice of the swan'), this piece overflows with joyous energy. Sahana renders dynamic Kalpanaswarams (spontaneous swara permutations) highlighting the symmetry of the notes and engaging in a spirited rhythmic exchange with the violin and mridangam."
+      },
+      {
+        "number": 3,
+        "category": "Sub-Main",
+        "title": "Jnanamosagarada (Sub-Main)",
+        "ragam": "Poorvikalyani (53rd Melakarta Gamanashrama Janya)",
+        "talam": "Rupakam (3 Beats / 6 Matras)",
+        "composer": "Saint Tyagaraja",
+        "deity": "Lord Sri Rama",
+        "visualIcon": "✨",
+        "scale": "Arohanam: S R₁ G₃ M₂ P D₁ P Ṡ | Avarohanam: Ṡ N₃ D₁ P M₂ G₃ R₁ S",
+        "overview": "The Sub-Main centerpiece of the first half. A profound philosophical masterpiece by Saint Tyagaraja beseeching Lord Rama: 'Will You not bestow upon me supreme wisdom (Jnana) and the path of divine truth?'",
+        "details": "Poorvikalyani is renowned for its intense emotional depth (gambhiram) and prathi madhyama curves. Sahana presents a structured Raga Alapana delineating the hallmark phrases of Poorvikalyani, followed by the kriti with brisk Neraval at 'Paramathmudu' and multi-speed kalpanaswarams concluding in a synchronized makutam."
+      },
+      {
+        "number": 4,
+        "category": "Keerthanam",
+        "title": "Ananda Natana Prakasam",
+        "ragam": "Kedaram (Janya of 29th Melakarta Dheerasankarabharanam)",
+        "talam": "Misra Chapu (7 Beats / 3+4)",
+        "composer": "Muthuswami Dikshitar",
+        "deity": "Lord Nataraja (Akasa Kshetram, Chidambaram)",
+        "visualIcon": "🔥",
+        "scale": "Arohanam: S M₁ G₃ M₁ P N₃ Ṡ | Avarohanam: Ṡ N₃ P M₁ G₃ R₂ S",
+        "overview": "One of the monumental Pancha Bhoota Sthala Kritis representing the Element of Ether/Space (Akasa Lingam) at the sacred temple of Chidambaram.",
+        "details": "Composed in majestic Sanskrit by Muthuswami Dikshitar, this grand kriti vividly describes Lord Shiva's cosmic dance of bliss (Ananda Tandavam) in the Golden Hall of Chidambaram. The stately vakra phrases of Ragam Kedaram paired with the rhythmic 7-beat Misra Chapu talam evoke cosmic majesty and deep spiritual wonder."
+      },
+      {
+        "number": 5,
+        "category": "Keerthanam",
+        "title": "Bhogendra Sayinam",
+        "ragam": "Kuntalavarali (Janya of 28th Melakarta Harikambhoji)",
+        "talam": "Khanda Chapu (5 Beats)",
+        "composer": "Maharaja Swathi Thirunal",
+        "deity": "Lord Padmanabha (Reclining on Adisesha)",
+        "visualIcon": "🌊",
+        "scale": "Arohanam: S M₁ P D₂ N₂ D₂ Ṡ | Avarohanam: Ṡ N₂ D₂ P M₁ S",
+        "overview": "A buoyant, melodious Sanskrit composition by the royal composer Swathi Thirunal extolling Lord Vishnu reclining peacefully upon the celestial serpent king, Adisesha.",
+        "details": "The unique scalar contours of Ragam Kuntalavarali (omitting Rishabham and Gandharam) combined with the lively 5-beat Khanda Chapu cycle create an undulating, wavy rhythm that mirrors the gentle sway of the ocean of milk (Ksheerasagara). Features brisk cascading chittaswaras."
+      },
+      {
+        "number": 6,
+        "category": "Centerpiece (Main)",
+        "title": "Sarojadala Netri (Grand Main Centerpiece)",
+        "ragam": "Shankarabharanam (29th Melakarta Dheerasankarabharanam)",
+        "talam": "Adi Talam (2-Kalai - 16 Beats)",
+        "composer": "Syama Sastri (Carnatic Musical Trinity)",
+        "deity": "Goddess Meenakshi / Kamakshi of Madurai",
+        "visualIcon": "🌺",
+        "scale": "Arohanam: S R₂ G₃ M₁ P D₂ N₃ Ṡ | Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S",
+        "overview": "The crowning zenith and monumental centerpiece of the concert. Syama Sastri's 'Sarojadala Netri' is one of the grandest gems in Carnatic music, praising the lotus-eyed Mother with unmatched rhythmic architecture and lyrical majesty.",
+        "details": "This centerpiece is presented through elaborate Manodharma:\n1. Grand Raga Alapana: An expansive, multi-octave exploration of Shankarabharanam across Mandra, Madhya, and Tara sthayis.\n2. Tanam: Majestic rhythmic vocalization simulating the pluck of the Veena.\n3. Kriti & Neraval: Deep thematic improvisation at 'Sama Gana Vinodini' exploring Goddess Meenakshi as the lover of celestial music.\n4. Kalpanaswaras: Mathematically rich swara korvais in 2-kalai Adi talam.\n5. Tani Avartanam: An exhilarating percussion duel by Chi. Anirudh Suresh on Mridangam."
+      },
+      {
+        "number": 7,
+        "category": "Keerthanam",
+        "title": "Abhimanam Vennamu (Arabhi Manam)",
+        "ragam": "Arabhi (Janya of 29th Melakarta Shankarabharanam) / Begada",
+        "talam": "Adi Talam (8 Beats)",
+        "composer": "Patnam Subramanya Iyer / Saint Tyagaraja",
+        "deity": "Lord Sri Rama",
+        "visualIcon": "🕊️",
+        "scale": "Arohanam: S R₂ M₁ P D₂ Ṡ | Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S",
+        "overview": "A vibrant, uplifting piece pleading for the Lord's unconditional grace and affection: 'Why have You withheld Your affection (Abhimanam) from this devoted servant?'",
+        "details": "Ragam Arabhi is an audava-sampoorna raga characterized by exhilarating, bright, swift phrases that evoke courage, enthusiasm (veera), and devotion. The piece features sparkling chittaswaras that sustain a celebratory tempo following the grand centerpiece."
+      },
+      {
+        "number": 8,
+        "category": "Devotional",
+        "title": "Andru Ivvulagam (Thiruppavai Pasuram 24)",
+        "ragam": "Sindhu Bhairavi",
+        "talam": "Adi Talam",
+        "composer": "Kotai Nachiyar (Sri Andal) • Music: Ariyakudi Ramanuja Iyengar",
+        "deity": "Lord Trivikrama / Sri Krishna",
+        "visualIcon": "🦚",
+        "scale": "Desiya Ragam with All 12 Svarasthanas (Universal Melodic Path)",
+        "overview": "The celebrated 24th Pasuram of Andal's sacred Tamil Thiruppavai, singing praises of Lord Vishnu's cosmic footsteps measuring the entire universe (Trivikrama Avatara).",
+        "details": "Rendered in the deeply emotional and universal raga Sindhu Bhairavi, this piece captures Andal's sublime surrender: 'Praise be to Thy feet that measured this whole world of yore!' Sahana renders this with soulful Tamil diction and tender microtonal curves."
+      },
+      {
+        "number": 9,
+        "category": "Folk-Classical",
+        "title": "Valli Kanavan Perai (Kavadi Chindu)",
+        "ragam": "Chenchurutti / Folk-Classical Ragamalika",
+        "talam": "Tisra Nadai / Adi",
+        "composer": "Traditional / Kavi Kunjara Bharati",
+        "deity": "Lord Murugan (The Beloved of Valli)",
+        "visualIcon": "🪘",
+        "scale": "Lyrical South Indian Folk-Classical Metre (Chindu)",
+        "overview": "The infectious, pulsating folk-classical Kavadi Chindu dedicated to Lord Muruga: 'Chant the name of Valli's consort, oh parrot, and sing His eternal glories!'",
+        "details": "Characterized by lilting syncopated rhythms (Tisra Nadai) and joyful, catchy refrains, this piece showcases Sahana's versatility in shifting seamlessly from heavy classical manodharma to soulful, spirited regional folk traditions."
+      },
+      {
+        "number": 10,
+        "category": "Thillana",
+        "title": "Maand Thillana",
+        "ragam": "Mand (Maand)",
+        "talam": "Adi Talam (8 Beats)",
+        "composer": "Lalgudi G. Jayaraman",
+        "deity": "Universal Joy & Musical Ecstasy",
+        "visualIcon": "⚡",
+        "scale": "Arohanam: S G₃ M₁ P D₂ Ṡ | Avarohanam: Ṡ N₃ D₂ P M₁ G₃ R₂ S",
+        "overview": "The rhythmic crescendo and aesthetic climax of the concert. Composed by the legendary violin maestro Lalgudi G. Jayaraman in the lilting, sweet Ragam Mand.",
+        "details": "Driven by crisp rhythmic sollukattus (percussive syllables like 'Ta Dhim Ta Na'), brisk swara passages, and playful cross-rhythmic syncopations, the vocalist, violinist, and percussionist lock into a thrilling, synchronized finale that fills the auditorium with celebratory ecstasy."
+      },
+      {
+        "number": 11,
+        "category": "Benediction",
+        "title": "Harivarasanam & Pavamana Mangalam",
+        "ragam": "Madhyamavathi & Saurashtram",
+        "talam": "Adi Talam (8 Beats)",
+        "composer": "Kumbakudi Kulathur Iyer & Saint Tyagaraja",
+        "deity": "Lord Ayyappa, Sri Rama & Universal Peace",
+        "visualIcon": "🪔",
+        "scale": "Auspicious Closing Ragas: S R₂ M₁ P N₂ Ṡ | Ṡ N₂ P M₁ R₂ S",
+        "overview": "The sacred conclusion of the concert. It begins with 'Harivarasanam', the celestial lullaby sung every night at the Sabarimala sanctum, and concludes with the auspicious Tyagaraja Mangalam 'Pavamana'.",
+        "details": "Rendered in the supreme peace of Ragam Madhyamavathi—which according to tradition dissolves any minor tonal imbalances and leaves only harmony—Sahana, Kum. Aishwarya Anand, and Chi. Anirudh Suresh offer their gratitude to the Gurus, ancestors, musicians, and rasikas, praying for universal health, peace, and prosperity for all."
+      }
+    ]
+  }
+}
