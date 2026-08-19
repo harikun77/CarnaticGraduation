@@ -57,7 +57,11 @@ async function initPage() {
 
   const rsvpBtns = document.querySelectorAll('.bind-rsvp');
   rsvpBtns.forEach(el => { 
-    if (data.site?.rsvpUrl) el.href = data.site.rsvpUrl; 
+    if (data.site?.rsvpUrl) {
+      el.href = data.site.rsvpUrl;
+    } else {
+      el.style.display = 'none';
+    }
   });
 
   const liveStreamBtns = document.querySelectorAll('.bind-livestream');
