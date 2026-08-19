@@ -93,7 +93,7 @@
       {
         "name": "Kum. Aishwarya Anand",
         "role": "Violin Accompanist",
-        "instrument": "Violin (Pakkavadhyam)",
+        "instrument": "Violin",
         "guruLineage": "Disciple of Guru Smt. Anuradha Sridhar",
         "image": "assets/accompanists/violin.jpg",
         "icon": "🎻",
@@ -102,7 +102,7 @@
       {
         "name": "Chi. Anirudh Suresh",
         "role": "Mridangam Accompanist",
-        "instrument": "Mridangam (Pradhana Laya Vadhyam)",
+        "instrument": "Mridangam",
         "guruLineage": "Disciple of Sri. Ravindra Bharathy Sridharan",
         "image": "assets/accompanists/mridangam.jpg",
         "icon": "🥁",
