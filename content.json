@@ -95,10 +95,10 @@
         "name": "Kum. Aishwarya Anand",
         "role": "Violin Accompanist",
         "instrument": "Violin (Pakkavadhyam)",
-        "guruLineage": "Disciple of Vidushi Smt. Anuradha Sridhar",
+        "guruLineage": "Disciple of Guru Smt. Anuradha Sridhar",
         "image": "assets/accompanists/violin.jpg",
         "icon": "🎻",
-        "bio": "Kum. Aishwarya Anand is a talented, sensitive violinist trained under the illustrious guidance of Vidushi Smt. Anuradha Sridhar (Lalgudi lineage). Aishwarya provides a melodious foundation, mirroring the vocalist's nuanced raga phrasing and engaging in vibrant, crisp kalpanaswara dialogues across complex tala cycles."
+        "bio": "Aishwarya Anand is a vocal and violin disciple of Guru Smt. Anuradha Sridhar, founder and director of Trinity Center for Music, California. Aishwarya is the great granddaughter of Sangita Kalanidhi Sri. T.K. Jayarama Iyer. A highly committed student, she has won several prizes since her childhood including multiple first prizes in the prestigious Cleveland Aradhana. She has been playing full length concerts as an accompanist and in duets with her sister for the past eight years; and participated in several noteworthy collaborative productions with leading artistes, including those produced by her Guru. She also plays western violin and was a part of her college’s philharmonic orchestra. She just completed college at Purdue University and is now working as a silicon design engineer in the semiconductor industry."
       },
       {
         "name": "Chi. Anirudh Suresh",
@@ -188,15 +188,15 @@
       },
       {
         "number": 7,
-        "category": "Keerthanam",
-        "title": "Abhimanam Vennamu (ArabhiManam)",
-        "ragam": "Arabhi (Janya of 29th Melakarta Shankarabharanam) / Begada",
+        "category": "Ragamalika",
+        "title": "ArabhiManam",
+        "ragam": "Ragamalika",
         "talam": "Adi Talam (8 Beats)",
-        "composer": "Patnam Subramanya Iyer / Saint Tyagaraja",
-        "deity": "Lord Sri Rama",
+        "composer": "Traditional / Classical Composition",
+        "deity": "Divine Grace & Bhakti",
         "visualIcon": "🕊️",
-        "overview": "A vibrant, uplifting piece pleading for the Lord's unconditional grace and affection: 'Why have You withheld Your affection (Abhimanam) from this devoted servant?'",
-        "details": "Ragam Arabhi is characterized by exhilarating, bright, swift phrases that evoke courage, enthusiasm (veera), and devotion. The piece features sparkling chittaswaras that sustain a celebratory tempo following the grand centerpiece."
+        "overview": "An expressive, soulful composition set as a vibrant Ragamalika (a garland of diverse ragas), conveying heartfelt devotion and seeking divine grace and affection (Abhimanam).",
+        "details": "Rendered as a melodious Ragamalika, this piece seamlessly traverses contrasting melodic colors and moods, sustaining a joyful, devotional cadence following the grand centerpiece."
       },
       {
         "number": 8,
