@@ -13,7 +13,7 @@ const FALLBACK_DATA = {
     venue: "Saratoga Civic Theater",
     address: "13777 Fruitvale Avenue, Saratoga, CA 95070",
     date: "Sunday, August 30, 2026",
-    time: "4:00 PM – 6:00 PM PDT",
+    time: "4:00 PM – 7:00 PM PDT",
     directionsUrl: "https://www.google.com/maps/dir/?api=1&destination=Saratoga%20Civic%20Theater%2C%2013777%20Fruitvale%20Ave%2C%20Saratoga%2C%20CA%2095070"
   }
 };
