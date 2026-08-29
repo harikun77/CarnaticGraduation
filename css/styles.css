@@ -674,6 +674,18 @@ a:hover {
 /* ==========================================================================
    Artists Page (Exact SanMargam dancers.html Bento Layout)
    ========================================================================== */
+.chief-guest-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  align-items: stretch;
+}
+
+.chief-guest-photo {
+  min-height: 280px;
+  position: relative;
+  background: #080e18;
+}
+
 .dancers-bento {
   display: grid;
   gap: 24px;
@@ -863,6 +875,8 @@ a:hover {
   .dancers-bento { grid-template-columns: 1fr; }
   .dancer-image-card { min-height: 380px; }
   .dancer-bio-card { min-height: auto; }
+  .chief-guest-grid { grid-template-columns: 1fr; }
+  .chief-guest-photo { min-height: 260px; }
   .program-item { grid-template-columns: 1fr; gap: 20px; }
   .program-image { min-height: 280px; }
   
