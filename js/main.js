@@ -9,7 +9,7 @@ const FALLBACK_DATA = {
     brand: "Paramacharya School of Music",
     logo: "assets/logo.png",
     rsvpUrl: "https://evite.me/carnatic-graduation-sahana",
-    liveStreamUrl: "https://youtube.com/live",
+    liveStreamUrl: "https://youtube.com/live/bBzb9hY1ceI?feature=share",
     venue: "Saratoga Civic Theater",
     address: "13777 Fruitvale Avenue, Saratoga, CA 95070",
     date: "Sunday, August 30, 2026",
